@@ -20,6 +20,7 @@ const routes: Routes = [
     }
     ]
   },
+  // TODO en esta seccion se utiliza el comodin ** para indicar el componente que sera mostrado si se ingresa una ruta equivoca.
   {
     path: '**',
     component: NotFoundComponent
