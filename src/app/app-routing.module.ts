@@ -29,7 +29,11 @@ const routes: Routes = [
       {
         path: 'estudiantes',
         loadChildren: './pages/estudiantes/estudiantes.module#EstudiantesModule'
-      }
+      },
+      {
+        path: 'biblioteca',
+        loadChildren: './pages/biblioteca/biblioteca.module#BibliotecaModule'
+      },
     ]
   },
   // TODO en esta seccion se utiliza el comodin ** para indicar el componente que sera mostrado si se ingresa una ruta equivoca.
