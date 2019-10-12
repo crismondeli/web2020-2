@@ -11,7 +11,13 @@ import { ExistenciaComponent } from './existencia/existencia.component';
 
 
 @NgModule({
-  declarations: [EditorialComponent, AutoresComponent, TiposComponent, AreasComponent, LibroComponent, ExistenciaComponent],
+  declarations: [EditorialComponent,
+                 AutoresComponent, 
+                 TiposComponent, 
+                 AreasComponent, 
+                 LibroComponent, 
+                 ExistenciaComponent
+                ],
   imports: [
     CommonModule,
     BibliotecaRoutingModule
