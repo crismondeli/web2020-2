@@ -9,7 +9,7 @@ export class ExistenciaComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+    ngOnInit() {
   }
 
 }
