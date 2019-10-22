@@ -1,40 +1,53 @@
-<p>autores works!</p>
-div class="container">
+<div class="text-center mb-4">
+          <h1 class="h3 mb-3 font-weight-normal">Datos del Autor</h1>
+          </div>
 
-    <h1>{{titulo}}</h1>
-    {{nombre}}
-    {{apellido}}
-    {{fecha}}
-    {{nacionalidad}}
+<form action="" class="main-form">
 
-    <form>
-        <div class="form-group row">
-            <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
-            <div class="col-sm-10">
-                <input type="text" [(ngModel)]="nombre" name="nombre" class="form-control" placeholder="Nombre">
-            </div>
+    <div class="row">
+          <div class="col" >
+             <div class="form-group">
+                  <label for="nombres">Nombres</label>
+                  <input type = "text" name="nombres" id="nombres" class=form-control>
+              </div> 
+         </div>
+         <div class="col">
+                    <div class ="form-group">
+                          <label for="apellidos">Apellidos</label>
+                          <input type= "text" name="apellidos" id ="apellidos"class=form-control>
+                    </div>
         </div>
-        <div class="form-group row">
-            <label for="inputApellido" class="col-sm-2 col-form-label">Apellido</label>
-            <div class="col-sm-10">
-                <input type="text" [(ngModel)]="apellido" name="pellido" class="form-control" placeholder="Apellido">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputFecha" class="col-sm-2 col-form-label">Fecha</label>
-            <div class="col-sm-10">
-                <input type="text" [(ngModel)]="fecha" name="fecha" class="form-control" placeholder="Fecha">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputNacionalidad" class="col-sm-2 col-form-label">Nacionalidad</label>
-            <div class="col-sm-10">
-                <input type="text" [(ngModel)]="nacionalidad" name="nacionalidad" class="form-control"
-                    placeholder="Nacionalidad">
-            </div>
-        </div>
-    </form>
+    </div>
+       <div class ="form-group">
+           <label for="identificacion">Identificación</label>
+           <input type= "number" name="identificacion" id ="identificacion"class=form-control>
+       </div>
 
-    <button type="button" (click)="saveForm()"> Submit</button>
+       <div class ="form-group">
+            <label for="edad">Edad</label>
+            <input type= "number" name="edad" id ="edad"class=form-control>
+        </div>
 
-</div> 
+       <div class="form-group">
+           <label for="email">E-mail</label>
+           <input type= "text" name="email" id ="email"class=form-control>
+       </div>
+
+       <div>
+          <label for="celular">Celular</label>
+          <input type= "number" name="celular" id ="celular"class=form-control>
+       </div>
+       
+       <div>
+          <label for="genero">Genero</label>
+            <select name="genero" id="genero"class=form-control>
+             <option value="masculino">Masculino </option>
+             <option value="femenino">Femenino </option>
+             <option value="otro">Otro </option>
+        </select>
+       </div>
+       
+       <div>
+            <button type="enviar" class="btn btn-success">Enviar</button>
+        </div>  
+</form>

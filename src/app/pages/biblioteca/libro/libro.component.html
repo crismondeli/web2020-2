@@ -1,30 +1,54 @@
-<form>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Example select</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect2">Example multiple select</label>
-      <select multiple class="form-control" id="exampleFormControlSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-  </form>
+<div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Agregar Información Del Libro</h1>
+        </div>
+<form action="" class="libro-form">
+
+        <div class="row">
+              <div class="col" >
+                 <div class="form-group">
+                      <label for="autor">Autor</label>
+                      <input type = "text" name="autor" id="autor" class=form-control>
+                  </div> 
+             </div>
+             <div class="col">
+                        <div class ="form-group">
+                              <label for="titulo">Título</label>
+                              <input type= "text" name="titulo" id ="titulo"class=form-control>
+                        </div>
+            </div>
+        </div>
+           <div class ="form-group">
+               <label for="edicion">Edición</label>
+               <input type= "number" name="edicion" id ="edicion"class=form-control>
+           </div>
+    
+           <div class="form-group">
+               <label for="publicado">Lugar De Publicación</label>
+               <input type= "text" name="publicado" id ="publicado"class=form-control>
+           </div>
+    
+           <div>
+              <label for="anoedicion">Año de Edición</label>
+              <input type= "datetime" name="anoedicion" id ="anoedicion"class=form-control>
+           </div>
+           
+           <div>
+                <label for="paginas">Número de páginas</label>
+                <input type= "number" name="paginas" id ="paginas"class=form-control>
+           </div>
+           
+           <div>
+                <label for="notas">Notas</label>
+                <input type= "text" name="notas" id ="notas"class=form-control>
+           </div>
+           
+           <div>
+                <label for="isbn">ISBN</label>
+                <input type= "number" name="isbn" id ="isbn"class=form-control>
+           </div>
+
+         
+                <button type="guardar" class="btn btn-primary">Guardar</button>
+             
+    </form>
+    
