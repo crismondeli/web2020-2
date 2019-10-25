@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { BibliotecaRoutingModule } from './biblioteca-routing.module';
 import { EditorialComponent } from './editorial/editorial.component';
@@ -12,15 +13,17 @@ import { ExistenciaComponent } from './existencia/existencia.component';
 
 @NgModule({
   declarations: [EditorialComponent,
-                 AutoresComponent, 
-                 TiposComponent, 
-                 AreasComponent, 
-                 LibroComponent, 
+                 AutoresComponent,
+                 TiposComponent,
+                 AreasComponent,
+                 LibroComponent,
                  ExistenciaComponent
                 ],
   imports: [
     CommonModule,
     BibliotecaRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class BibliotecaModule { }
