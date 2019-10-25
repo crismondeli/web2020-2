@@ -7,13 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExistenciaComponent implements OnInit {
 
-  public var1 = "ejemplo"
-  public libroexistencia = " 132465"
-  public cantidad = "2653213 "
+  public var1 : String;
+  public libroexistencia : String;
+
 
   constructor() { }
 
     ngOnInit() {
+
+  }
+
+  saveForm(){
+    alert(this.var1)
   }
 
 }
